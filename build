@@ -1,0 +1,8 @@
+#!/bin/bash
+
+my_eclipsedir='.eclipse-docker'
+echo 'creating directory:'"$my_eclipsedir"
+mkdir -p "$my_eclipsedir"
+
+echo 'This will take a lot of time...'
+docker build --no-cache -t fernandominguez/eclipse_docker:eclipse_base_bionic .
